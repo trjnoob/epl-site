@@ -16,7 +16,8 @@ def getTeamList(YEAR_END):
     YEAR_START = YEAR_END - 2
     infileList = []
     for i in range(YEAR_START, YEAR_END):
-        infileName = "epl_" + f"{i:02d}" + "" + f"{i+1:02d}" + "_data.json"
+        #infileName = "epl_" + f"{i:02d}" + "" + f"{i+1:02d}" + "_data.json"
+        infileName = "epl_" + str(i) + "" + str(i+1) + "_data.json
         infileList.append(infileName)
 
     #Only the latest season data is loaded for now 
@@ -43,7 +44,8 @@ def predict_match(YEAR_END, hteam, ateam):
     YEAR_START = YEAR_END - 2
     infileList = []
     for i in range(YEAR_START, YEAR_END):
-        infileName = "epl_" + f"{i:02d}" + "" + f"{i+1:02d}" + "_data.json"
+        #infileName = "epl_" + f"{i:02d}" + "" + f"{i+1:02d}" + "_data.json"
+        infileName = "epl_" + str(i) + "" + str(i+1) + "_data.json
         infileList.append(infileName)
 
     nnData = []
