@@ -1,0 +1,6 @@
+<h1>Prediction</h1>
+
+<ul>
+<li>{{ homeTeam }}</li>
+<li>{{ awayTeam }}</li>
+</ul>
